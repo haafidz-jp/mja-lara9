@@ -5,6 +5,76 @@ $links = [
         "text" => "Dashboard",
         "is_multi" => false,
     ],
+    // Payment Section
+    [
+        "href" => [
+            [
+                "section_text" => "Payment",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data Payment"],
+                    ["href" => "user.new", "text" => "Tambah Payment"]
+                ]
+            ]
+        ],
+        "text" => "Payment",
+        "is_multi" => true,
+    ],
+    // Produk Section
+    [
+        "href" => [
+            [
+                "section_text" => "Produk",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data Produk"],
+                    ["href" => "user.new", "text" => "Tambah Produk"]
+                ]
+            ]
+        ],
+        "text" => "Produk",
+        "is_multi" => true,
+    ],
+    // Purchase Order Section
+    [
+        "href" => [
+            [
+                "section_text" => "Purchase Order",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data PO"],
+                    ["href" => "user.new", "text" => "Tambah PO"]
+                ]
+            ]
+        ],
+        "text" => "Purchase Order",
+        "is_multi" => true,
+    ],
+    // Surat Jalan Section
+    [
+        "href" => [
+            [
+                "section_text" => "Surat Jalan",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data Surat Jalan"],
+                    ["href" => "user.new", "text" => "Tambah Surat Jalan"]
+                ]
+            ]
+        ],
+        "text" => "Surat Jalan",
+        "is_multi" => true,
+    ],
+    // Invoice Section
+    [
+        "href" => [
+            [
+                "section_text" => "Invoice",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data Invoice"],
+                    ["href" => "user.new", "text" => "Tambah Invoice"]
+                ]
+            ]
+        ],
+        "text" => "Invoice",
+        "is_multi" => true,
+    ],
     [
         "href" => [
             [
@@ -25,7 +95,7 @@ $navigation_links = array_to_object($links);
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="{{ route('dashboard') }}">Dashboard</a>
+            <a href="{{ route('dashboard') }}">CV. MULIA JAYA AGUNG</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="{{ route('dashboard') }}">
