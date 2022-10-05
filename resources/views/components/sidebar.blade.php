@@ -5,6 +5,20 @@ $links = [
         "text" => "Dashboard",
         "is_multi" => false,
     ],
+    // Quotation Section
+    [
+        "href" => [
+            [
+                "section_text" => "Quotation",
+                "section_list" => [
+                    ["href" => "user", "text" => "Data Quotation"],
+                    ["href" => "user.new", "text" => "Tambah Quotation"]
+                ]
+            ]
+        ],
+        "text" => "Payment",
+        "is_multi" => true,
+    ],
     // Payment Section
     [
         "href" => [
