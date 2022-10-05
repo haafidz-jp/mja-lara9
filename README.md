@@ -49,6 +49,9 @@ $ php artisan migrate
     <img src="https://telegra.ph/file/8741e5fc455f02571b4c2.png" width="80%" height="auto" />
 </p>
 
+## SQL SCHEME TO MIGRATION
+- [GENERATOR](https://laravelarticle.com/laravel-migration-generator-online)
+
 ## Thanks To
 - [Taylor Ottwell](https://github.com/taylorotwell) for Laravel.
 - [Stisla](https://getstisla.com/) for admin theme.
