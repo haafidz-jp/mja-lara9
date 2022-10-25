@@ -39,8 +39,8 @@ $links = [
             [
                 "section_text" => "Produk",
                 "section_list" => [
-                    ["href" => "user", "text" => "Data Produk"],
-                    ["href" => "user.new", "text" => "Tambah Produk"]
+                    ["href" => "product", "text" => "Data Data Produk"],
+                    ["href" => "product.new", "text" => "Tambah Data Produk"]
                 ]
             ]
         ],
