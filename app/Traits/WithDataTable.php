@@ -27,6 +27,25 @@ trait WithDataTable {
                 ];
                 break;
 
+            case 'product':
+                $products = $this->model::search($this->search)
+                    ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                    ->paginate($this->perPage);
+
+                return [
+                    "view" => 'livewire.table.product',
+                    "products" => $products,
+                    "data" => array_to_object([
+                        'href' => [
+                            'create_new' => route('product.new'),
+                            'create_new_text' => 'Buat Product Baru',
+                            'export' => '#',
+                            'export_text' => 'Export'
+                        ]
+                    ])
+                ];
+                break;
+
             default:
                 # code...
                 break;
