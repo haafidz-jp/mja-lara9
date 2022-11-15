@@ -11,12 +11,12 @@ $links = [
             [
                 "section_text" => "Quotation",
                 "section_list" => [
-                    ["href" => "user", "text" => "Data Quotation"],
-                    ["href" => "user.new", "text" => "Tambah Quotation"]
+                    ["href" => "quotation", "text" => "Data Quotation"],
+                    ["href" => "quotation.new", "text" => "Tambah Quotation"]
                 ]
             ]
         ],
-        "text" => "Payment",
+        "text" => "Quotation",
         "is_multi" => true,
     ],
     // Payment Section
