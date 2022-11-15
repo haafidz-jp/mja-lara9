@@ -30,4 +30,7 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/product/new', "pages.product.product-new")->name('product.new');
     Route::view('/product/edit/{productId}', "pages.product.product-edit")->name('product.edit');
 
+    Route::get('/quotation', [ QuotationController::class, "index_view" ])->name('quotation');
+    Route::view('/quotation/new', "pages.quotation.quotation-new")->name('quotation.new');
+    Route::view('/quotation/edit/{quotationId}', "pages.quotation.quotation-edit")->name('quotation.edit');
 });
