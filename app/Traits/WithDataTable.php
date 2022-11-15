@@ -46,6 +46,25 @@ trait WithDataTable {
                 ];
                 break;
 
+                case 'quotation':
+                    $quotations = $this->model::search($this->search)
+                        ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
+                        ->paginate($this->perPage);
+    
+                    return [
+                        "view" => 'livewire.table.quotation',
+                        "quotations" => $quotation,
+                        "data" => array_to_object([
+                            'href' => [
+                                'create_new' => route('quotation.new'),
+                                'create_new_text' => 'Buat Quotation Baru',
+                                'export' => '#',
+                                'export_text' => 'Export'
+                            ]
+                        ])
+                    ];
+                    break;
+
             default:
                 # code...
                 break;
